@@ -6,7 +6,7 @@ import 'dart:io';
 import 'package:random_uint8list/random_uint8list.dart';
 import 'package:collection/collection.dart';
 
-Future<InternetAddress> localIpv4() async {
+Future<InternetAddress> intranetIpv4() async {
   const len = 16;
   final token = randomUint8List(len);
   final dgSocket = await RawDatagramSocket.bind(InternetAddress.anyIPv4, 0);
